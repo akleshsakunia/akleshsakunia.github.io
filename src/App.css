@@ -1,0 +1,19 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.85rem;
+}
+
+.App {
+  top: 0;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.material-icons {
+  vertical-align: sub;
+}
+
+.MuiGrid-grid-xs-12 {
+  margin: 0.5em 0 !important;
+}
