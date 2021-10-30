@@ -1,12 +1,13 @@
-import "./App.css";
+import "./App.scss";
 
 import Paper from "@material-ui/core/Paper";
 import Grid from "@material-ui/core/Grid";
-import { Box, Typography } from "@material-ui/core";
+import { Box, Button, Typography } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import Avatar from "@material-ui/core/Avatar";
 import { blue } from "@material-ui/core/colors";
-
+import html2canvas from "html2canvas";
+import jsPDF from "jspdf";
 import Section from "./components/Section";
 import SectionalData from "./shared/SectionalData";
 import ChipList from "./components/ChipList";
@@ -33,13 +34,24 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: blue[800],
     color: "#fff",
   },
-  margin: {
-    
-  }
+  margin: {},
 }));
 
 function App() {
   const classes = useStyles();
+
+  const printDocument = () => {
+    const input = document.getElementById("root");
+    html2canvas(input).then((canvas) => {
+      let imgWidth = 208;
+      let imgHeight = (canvas.height * imgWidth) / canvas.width;
+      const imgData = canvas.toDataURL("img/png");
+      const pdf = new jsPDF("p", "mm", "a4");
+      pdf.addImage(imgData, "PNG", 0, 0, imgWidth, imgHeight);
+      // pdf.output('dataurlnewwindow');
+      pdf.save("download.pdf");
+    });
+  };
 
   return (
     <div className="classes.root">
@@ -88,6 +100,13 @@ function App() {
           </Grid>
         </Grid>
       </Grid>
+
+      <div class="download-pdf">
+        <span class="mas">Thanks!</span>
+        <button type="button" className="" onClick={printDocument}>
+          PDF ⬇️
+        </button>
+      </div>
     </div>
   );
 }

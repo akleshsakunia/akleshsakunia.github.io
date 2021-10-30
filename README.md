@@ -28,7 +28,7 @@
 ### Built With
 
 - [React.js](https://reactjs.org/)
-
+- [MUI](https://mui.com/)
 <!-- GETTING STARTED -->
 
 ## Getting Started
