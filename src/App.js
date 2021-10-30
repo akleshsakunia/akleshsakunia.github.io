@@ -3,14 +3,16 @@ import "./styles/main.scss";
 import Section from "./components/Section";
 import SectionalData from "./shared/SectionalData";
 import ChipList from "./components/ChipList";
-import Heading from "./components/Heading";
+import Profile from "./components/Profile";
 import CommonData from "./shared/CommonData";
 
 function App() {
   return (
-    <div>
-      <div>
-        <Heading />
+    <div className="container-fluid">
+      <div className="row">
+        <div className="col-2">
+          <Profile />
+        </div>
       </div>
 
       {/* <div container>
