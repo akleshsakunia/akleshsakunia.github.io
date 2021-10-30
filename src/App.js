@@ -104,7 +104,7 @@ function App() {
       <div class="download-pdf">
         <span class="mas">Thanks!</span>
         <button type="button" className="" onClick={printDocument}>
-          PDF ⬇️
+          PDF
         </button>
       </div>
     </div>

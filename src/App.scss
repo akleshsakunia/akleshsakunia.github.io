@@ -18,14 +18,6 @@ body {
   margin: 0.5em 0 !important;
 }
 
-/* .download-pdf {
-  position: absolute !important;
-  bottom: 2em;
-  float: right;
-  background: aqua;
-  position: sticky !important;
-} */
-
 @mixin button($bcolor, $url, $x1, $y1, $bor, $col) {
   background: $bcolor;
   -webkit-mask: url($url);
@@ -37,7 +29,9 @@ body {
 }
 
 .download-pdf {
-  position: relative;
+  position: absolute;
+  top: 6em;
+  right: 1em;
   width: 4em;
   height: 3em;
   margin-left: auto;
@@ -49,7 +43,9 @@ body {
   font-weight: 300;
   transition: 0.5s;
   letter-spacing: 1px;
-  border-radius: 8px;
+  border-radius: 2.5em;
+  -webkit-animation: 3s linear 0.1s bounce;
+  animation: 3s linear 0.1s bounce;
 
   button {
     width: 101%;
@@ -143,4 +139,23 @@ body {
 
 a {
   color: #00ff95;
+}
+
+@keyframes bounce {
+  0% {
+    height: 3em;
+    width: 4em;
+  }
+  33% {
+    height: 3.5em;
+    width: 4.5em;
+  }
+  66% {
+    height: 3.2em;
+    width: 4.2em;
+  }
+  100% {
+    height: 3em;
+    width: 4em;
+  }
 }
