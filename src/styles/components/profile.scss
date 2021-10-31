@@ -1,139 +1,53 @@
-// codepen - https://codepen.io/havardob/pen/qBXZPRE
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-}
-
-button,
-input,
-select,
-textarea {
-  font: inherit;
-}
-
-a {
-  color: inherit;
-}
-/* End basic CSS override */
-
 .profile {
-  display: inline-flex;
-  align-items: center;
-  flex-direction: column;
-  padding: 3rem;
-  background-color: #1b2028;
-  border-radius: 16px;
-  border: 3px solid transparent;
-  background-clip: padding-box;
-  text-align: center;
-  color: #f1f3f3;
-  background-image: linear-gradient(
-    135deg,
-    rgba(#752e7c, 0.35),
-    rgba(#734a58, 0.1) 15%,
-    #1b2028 20%,
-    #1b2028 100%
-  );
-  &:after {
-    content: "";
-    display: block;
-    top: -3px;
-    left: -3px;
-    bottom: -3px;
-    right: -3px;
-    z-index: -1;
-    position: absolute;
-    border-radius: 16px;
-  }
+  background: $profile-bgcolor;
+  height: 100vh;
+  word-wrap: break-word;
+  overflow-y: scroll;
 }
-
-.profile-image {
-  border-radius: 50%;
-  overflow: hidden;
-  width: 175px;
-  height: 175px;
+.hex-base {
   position: relative;
-  img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-  }
+  max-width: 100%;
+  width: 200px;
+  padding: 50%;
+}
+.hex-base:before {
+  content: "";
+  display: block;
+  padding-bottom: 115%;
+}
+.hex-base img {
+  left: 50%;
+  position: relative;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 88%;
+}
+.hex__shape {
+  position: absolute;
+  backface-visibility: hidden;
+  left: 0;
+  height: 100%;
+  overflow: hidden;
+  top: 0;
+  transform: rotate(240deg);
+  width: 100%;
 }
 
-.profile-username {
-  font-size: 1.5rem;
-  font-weight: 600;
-  margin-top: 1.5rem;
+.profile-content {
+  position: relative;
+  top: 0.5rem;
+  text-align: center;
 }
 
-.profile-user-handle {
-  color: #7d8396;
+.myname {
+  color: $red-color;
 }
 
-.profile-actions {
-  margin-top: 1.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  & > * {
-    margin: 0 0.25rem;
-  }
+.head-bar {
+  background: $red-color;
+  color: honeydew;
 }
-
-.btn {
-  border: 0;
-  background-color: transparent;
-  padding: 0;
-  height: 46px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  line-height: 1;
-  transition: 0.15s ease;
-
-  &--primary {
-    border-radius: 99em;
-    background-color: #3772ff;
-    background-image: linear-gradient(135deg, #5587ff, #3772ff);
-    color: #fff;
-    padding: 0 1.375em;
-    &:hover,
-    &:focus {
-      background-size: 150%;
-    }
-  }
-
-  &--icon {
-    height: 46px;
-    width: 46px;
-    border-radius: 50%;
-    border: 3px solid #343945;
-    color: #7d8396;
-    i {
-      font-size: 1.25em;
-    }
-
-    &:hover,
-    &:focus {
-      border-color: #7d8396;
-    }
-  }
-}
-
-.profile-links {
-  margin-top: 3.5rem;
-}
-
-.link {
-  text-decoration: none;
-  color: #7d8396;
-  margin-left: 0.375rem;
-  margin-right: 0.375rem;
-  i {
-    font-size: 1.25em;
-  }
+.badge {
+  background: $red-color;
+  margin: 0.2rem;
 }
