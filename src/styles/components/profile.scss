@@ -9,6 +9,7 @@
   width: 200px;
   padding: 50%;
   top: 0.5em;
+  overflow: hidden;
 }
 .hex-base:before {
   content: "";
@@ -46,4 +47,5 @@
 .badge {
   background: $red-color;
   margin: 0.2rem;
+  font-size: 1rem;
 }

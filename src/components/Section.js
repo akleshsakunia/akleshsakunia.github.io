@@ -5,15 +5,13 @@ import SectionalData from "../shared/SectionalData";
 export default (props) => {
   return (
     <>
-      <div className="row">
-        <div className="col-12 col-md-6">
-          <SectionView data={SectionalData["WORK EXPERIENCE"]} />
-          <SectionView data={SectionalData["EDUCATION"]} />
-          <SectionView data={SectionalData["ACHIEVEMENTS"]} />
-        </div>
-        <div className="col-12 col-md-6">
-          <SectionView data={SectionalData["PROJECTS"]} />
-        </div>
+      <div className="col-7 col-md-4 section">
+        <SectionView data={SectionalData["WORK EXPERIENCE"]} />
+        <SectionView data={SectionalData["EDUCATION"]} />
+        <SectionView data={SectionalData["ACHIEVEMENTS"]} />
+      </div>
+      <div className="col-12 col-md-5 section">
+        <SectionView data={SectionalData["PROJECTS"]} />
       </div>
     </>
   );
