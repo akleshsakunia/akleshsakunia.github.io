@@ -1,3 +1,4 @@
+import "./../styles/main.scss";
 import React from "react";
 import SectionalData from "../shared/SectionalData";
 
@@ -7,8 +8,12 @@ export default (props) => {
       <div className="row">
         <div className="col-12 col-md-6">
           <SectionView data={SectionalData["WORK EXPERIENCE"]} />
+          <SectionView data={SectionalData["EDUCATION"]} />
+          <SectionView data={SectionalData["ACHIEVEMENTS"]} />
         </div>
-        <div className="col-12 col-md-6">works2</div>
+        <div className="col-12 col-md-6">
+          <SectionView data={SectionalData["PROJECTS"]} />
+        </div>
       </div>
     </>
   );
@@ -18,7 +23,7 @@ const SectionView = (props) => {
   const sectionElement = props.data;
   return (
     <>
-      <div>{sectionElement.heading}</div>
+      <div className="head-bar">{sectionElement.heading}</div>
       {sectionElement.content.map((val, idx) => (
         <div key={idx}>
           {val.subHeading && <div>{val.subHeading}</div>}

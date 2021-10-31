@@ -1,6 +1,5 @@
 .profile {
   background: $profile-bgcolor;
-  height: 100vh;
   word-wrap: break-word;
   overflow-y: scroll;
 }
@@ -43,10 +42,6 @@
   color: $red-color;
 }
 
-.head-bar {
-  background: $red-color;
-  color: honeydew;
-}
 .badge {
   background: $red-color;
   margin: 0.2rem;
