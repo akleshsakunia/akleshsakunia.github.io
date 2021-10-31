@@ -10,13 +10,30 @@ export default {
           "Provided cloud solutioning mainly in AWS and mentored freshers",
         ],
       },
+      {
+        subHeading: "Fullstack Engineer - Numerator",
+        innerContent: [
+          "Did system design and implementation for scalable infra for crawling",
+          "Migrated pip packages from 3rd party tooling (unorganised way) to GitHub",
+          "Migrating UI from EmberJs/vanillaJs/flask-Jinja2 to unified ReactJs pages",
+          "Working on infra related(AWS) and on call issues",
+        ],
+      },
     ],
   },
-  "PROJECTS": {
+  PROJECTS: {
     heading: "Projects",
     content: [
       {
-        subHeading: "Take1 TV Transcription (Current) - Cybage",
+        subHeading: "Pricing Intel (kodiak/DS) (Current) - Numerator",
+        innerContent: [
+          "Working on full end to end development of new features to Pricing intel platform. Mostly catering to report generation services and scaling it",
+          "Created a scalable system design on AWS to handle massive number of crawls to various online stores",
+          "Working on AWS infra related issues and system maintainence",
+        ],
+      },
+      {
+        subHeading: "Take1 TV Transcription - Cybage",
         innerContent: [
           "Responsible for designing APIs for TV transcription service Take1's resource and user management platform that runs completely on AWS . Worked on UI core logic design in Angular and project setup.",
           "Led design and implementation of fully scalable and cost efficient email service on aws infra upon various triggers to notify entities of services and system health.",
@@ -27,7 +44,7 @@ export default {
         subHeading: "Google - Online marketing challenge - Cybage",
         innerContent: [
           "Worked on new feature requests, task automation and pipeline design for data ingestion from google sheets and Google's internal DB APIs(cronjobs on GCP AppEngine).",
-          "Worked on maps integration for 'Grow with Google'."
+          "Worked on maps integration for 'Grow with Google'.",
         ],
       },
       {
@@ -35,7 +52,7 @@ export default {
         innerContent: [
           "Responsible for partner onboarding and integration in the system, Rule creation and optimization for BA's and MA's.",
           "Used Spark for data manipulations on the Cloudera HDFS cluster, and data pipeline verification before sandbox deployments.",
-          "Worked on data segregation for all the advertisement data logs generated from facebook, twitter, pinterest and instagram and generating a prediction based model to be able to predict ctr and other metrics for similar Ad campaigns."
+          "Worked on data segregation for all the advertisement data logs generated from facebook, twitter, pinterest and instagram and generating a prediction based model to be able to predict ctr and other metrics for similar Ad campaigns.",
         ],
       },
       {
@@ -45,46 +62,40 @@ export default {
         ],
       },
       {
-        subHeading: "Agricultural product object detection using OpenCV - Final Yr.",
+        subHeading:
+          "Agricultural product object detection using OpenCV - Final Yr.",
         innerContent: [
-          "Created an IOT based object detection software for picking ready to harvest fruits and for surveillance, used template mapping techniques to improve classification. Used Django and Mysql for UI & reporting."
+          "Created an IOT based object detection software for picking ready to harvest fruits and for surveillance, used template mapping techniques to improve classification. Used Django and Mysql for UI & reporting.",
         ],
       },
     ],
   },
-  "EDUCATION": {
+  EDUCATION: {
     heading: "Education",
     content: [
       {
         subHeading: "B.E - Nagpur University",
-        innerContent: [
-          "2014-2018 8.75 CGPA"
-        ],
+        innerContent: ["2014-2018 8.75 CGPA"],
       },
       {
         subHeading: "HSC - G.H.V.M (Jharsuguda)",
-        innerContent: [
-          "2012-2014 83%"
-        ],
+        innerContent: ["2012-2014 83%"],
       },
       {
         subHeading: "SSC - G.H.V.M (Jharsuguda)",
-        innerContent: [
-          `2010-2012 10 CGPA`
-        ],
+        innerContent: [`2010-2012 10 CGPA`],
       },
     ],
   },
-  "ACHIEVEMENTS": {
+  ACHIEVEMENTS: {
     heading: "Achievements",
     content: [
       {
         innerContent: [
           "Led a team of 6 to finals of Hackathon by Govt. Of India twice in 2017 and 2018",
-          "Mentored freshers in current organization for Python, AWS and generic development activities"
+          "Mentored freshers in current organization for Python, AWS and generic development activities",
         ],
       },
     ],
   },
 };
-
