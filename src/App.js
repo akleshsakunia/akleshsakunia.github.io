@@ -12,7 +12,7 @@ function App() {
         <div className="col-5 col-md-3 profile">
           <Profile />
         </div>
-        <div className="col-7 col-md-9">
+        <div className="col-7 col-md-9 section">
           <Section />
         </div>
       </div>

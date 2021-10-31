@@ -9,7 +9,7 @@ export default () => {
         <div class="hex__shape">
           <div class="hex__shape">
             <div class="hex__shape">
-              <img alt="Aklesh Sakunia" src="aklesh-cropped-min.jpg" />
+              <img alt="Aklesh Sakunia" src="aklesh-1.jpg" />
             </div>
           </div>
         </div>

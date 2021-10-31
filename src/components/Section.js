@@ -26,7 +26,7 @@ const SectionView = (props) => {
       <h5 className="head-bar">{sectionElement.heading}</h5>
       {sectionElement.content.map((val, idx) => (
         <div key={idx}>
-          {val.subHeading && <div className="subheading">{val.subHeading}</div>}
+          {val.subHeading && <h6 className="subheading">{val.subHeading}</h6>}
           <ul>
             {val.innerContent.map((val, idx) => (
               <li key={idx}>{val}</li>
