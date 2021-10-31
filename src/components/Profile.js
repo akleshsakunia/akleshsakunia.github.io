@@ -21,17 +21,17 @@ export default () => {
           <h6>{CommonData.designation}</h6>
         </div>
         <p>
-          <div className="head-bar">Work</div>
+          <h5 className="head-bar">Work</h5>
           <div>{CommonData.motto}</div>
         </p>
         <p>
-          <div className="head-bar">Contact Info</div>
+          <h5 className="head-bar">Contact Info</h5>
           <div>{CommonData.email}</div>
           <div>{CommonData.phoneNumber}</div>
           <div>{CommonData.location}</div>
         </p>
         <p>
-          <div className="head-bar">Skills</div>
+          <h5 className="head-bar">Skills</h5>
           {CommonData.skills.map((skill) => (
             <span className="badge rounded-pill"> {skill} </span>
           ))}
