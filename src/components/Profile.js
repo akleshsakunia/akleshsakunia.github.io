@@ -22,13 +22,19 @@ export default () => {
         </div>
         <p>
           <h5 className="head-bar">Work</h5>
-          <div>{CommonData.motto}</div>
+          <b>{CommonData.motto}</b>
         </p>
         <p>
           <h5 className="head-bar">Contact Info</h5>
-          <div>{CommonData.email}</div>
-          <div>{CommonData.phoneNumber}</div>
-          <div>{CommonData.location}</div>
+          <div>
+            <b>{CommonData.email}</b>
+          </div>
+          <div>
+            <b>{CommonData.phoneNumber}</b>
+          </div>
+          <div>
+            <b>{CommonData.location}</b>
+          </div>
         </p>
         <p>
           <h5 className="head-bar">Skills</h5>
