@@ -1,6 +1,7 @@
 import "./../styles/main.scss";
 import React from "react";
 import SectionalData from "../shared/SectionalData";
+import Markdown from "react-markdown";
 
 export default (props) => {
   return (
@@ -27,7 +28,9 @@ const SectionView = (props) => {
           {val.subHeading && <h6 className="subheading">{val.subHeading}</h6>}
           <ul>
             {val.innerContent.map((val, idx) => (
-              <li key={idx}>{val}</li>
+              <li key={idx}>
+                <Markdown>{val}</Markdown>
+              </li>
             ))}
           </ul>
         </div>
