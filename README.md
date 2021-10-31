@@ -84,5 +84,5 @@ Project Link: [https://akleshsakunia.github.io](https://akleshsakunia.github.io)
 [license-shield]: https://img.shields.io/github/license/akleshsakunia/akleshsakunia.github.io.svg?style=for-the-badge
 [license-url]: https://github.com/akleshsakunia/akleshsakunia.github.io/blob/master/LICENSE
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: www.linkedin.com/in/aklesh-sakunia-927608103
+[linkedin-url]: https://www.linkedin.com/in/aklesh-sakunia-927608103
 [product-screenshot]: images/screenshot.png
