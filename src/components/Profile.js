@@ -3,6 +3,12 @@ import React from "react";
 import CommonData from "../shared/CommonData";
 
 export default () => {
+  const getPdf = (single = true) => {
+    const projectsCol = document.getElementById("projects");
+    if (single) projectsCol.style.display = "none";
+    window.print();
+    if (single) projectsCol.style.display = "";
+  };
   return (
     <div className="col-5 col-md-3 profile">
       <div class="hex-base">
@@ -20,6 +26,18 @@ export default () => {
           <h3 className="myname">{CommonData.name}</h3>
           <h6>{CommonData.designation}</h6>
         </div>
+        <button
+          onClick={() => getPdf(false)}
+          className="no-print btn btn-secondary m-2"
+        >
+          Get full PDF
+        </button>
+        <button
+          onClick={() => getPdf()}
+          className="no-print btn btn-secondary m-2"
+        >
+          Get 1 page PDF
+        </button>
         <p>
           <h5 className="head-bar">Work</h5>
           <b>{CommonData.motto}</b>

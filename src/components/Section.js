@@ -11,7 +11,7 @@ export default (props) => {
         <SectionView data={SectionalData["EDUCATION"]} />
         <SectionView data={SectionalData["ACHIEVEMENTS"]} />
       </div>
-      <div className="col-12 col-md-5 section">
+      <div className="col-12 col-md-5 section" id="projects">
         <SectionView data={SectionalData["PROJECTS"]} />
       </div>
     </>
