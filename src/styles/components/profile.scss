@@ -1,0 +1,51 @@
+.profile {
+  background: $profile-bgcolor;
+  word-wrap: break-word;
+  overflow-y: scroll;
+}
+.hex-base {
+  position: relative;
+  max-width: 100%;
+  width: 200px;
+  padding: 50%;
+  top: 0.5em;
+  overflow: hidden;
+}
+.hex-base:before {
+  content: "";
+  display: block;
+  padding-bottom: 115%;
+}
+.hex-base img {
+  left: 50%;
+  position: relative;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 88%;
+}
+.hex__shape {
+  position: absolute;
+  backface-visibility: hidden;
+  left: 0;
+  height: 100%;
+  overflow: hidden;
+  top: 0;
+  transform: rotate(240deg);
+  width: 100%;
+}
+
+.profile-content {
+  position: relative;
+  top: 0.5rem;
+  text-align: center;
+}
+
+.myname {
+  color: $red-color;
+}
+
+.badge {
+  background: $red-color;
+  margin: 0.2rem;
+  font-size: 1rem;
+}

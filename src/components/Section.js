@@ -1,45 +1,36 @@
+import "./../styles/main.scss";
 import React from "react";
-import { makeStyles } from "@material-ui/core/styles";
-import { blue } from "@material-ui/core/colors";
-import { Box } from "@material-ui/core";
-
-const useStyles = makeStyles((theme) => ({
-  root: {
-    paddingBottom: theme.spacing(3),
-    paddingTop: theme.spacing(3),
-  },
-  ulStyle: {
-    listStyle: "square outside none",
-  },
-  headingStyle: {
-    fontSize: 20,
-    fontWeight: 500,
-    color: blue[600],
-  },
-  subHeadingStyle: {
-    fontSize: 16,
-    color: blue[600],
-  },
-}));
+import SectionalData from "../shared/SectionalData";
+import Markdown from "react-markdown";
 
 export default (props) => {
-  const classes = useStyles();
+  return (
+    <>
+      <div className="col-7 col-md-4 section">
+        <SectionView data={SectionalData["WORK EXPERIENCE"]} />
+        <SectionView data={SectionalData["EDUCATION"]} />
+        <SectionView data={SectionalData["ACHIEVEMENTS"]} />
+      </div>
+      <div className="col-12 col-md-5 section">
+        <SectionView data={SectionalData["PROJECTS"]} />
+      </div>
+    </>
+  );
+};
 
+const SectionView = (props) => {
   const sectionElement = props.data;
   return (
     <>
-      <Box className={classes.headingStyle}>{sectionElement.heading}</Box>
-      <hr size="2" color={blue[600]} />
+      <h5 className="head-bar">{sectionElement.heading}</h5>
       {sectionElement.content.map((val, idx) => (
         <div key={idx}>
-          {val.subHeading && (
-            <Box className={classes.subHeadingStyle} pl="1rem">
-              {val.subHeading}
-            </Box>
-          )}
-          <ul className={classes.ulStyle}>
+          {val.subHeading && <h6 className="subheading">{val.subHeading}</h6>}
+          <ul>
             {val.innerContent.map((val, idx) => (
-              <li key={idx}>{val}</li>
+              <li key={idx}>
+                <Markdown>{val}</Markdown>
+              </li>
             ))}
           </ul>
         </div>
