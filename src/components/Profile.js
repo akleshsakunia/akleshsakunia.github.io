@@ -4,7 +4,7 @@ import CommonData from "../shared/CommonData";
 
 export default () => {
   return (
-    <div>
+    <div className="col-5 col-md-3 profile">
       <div class="hex-base">
         <div class="hex__shape">
           <div class="hex__shape">

@@ -3,12 +3,21 @@ export default {
     heading: "Work Experience",
     content: [
       {
+        subHeading:
+          "Fullstack Engineer - WiserSolutions (Acquired Numerator EComm)",
+        innerContent: [
+          "Improved **Automated Matching Algorithm** to increase accuracy & completeness **from 76% to 88%**",
+          "Worked on buliding **Microfrontend Application** & consolidating multiple frontend tech stacks",
+          "Optimised several data processing workflows/reports & **reduced** Infra(AWS and datacenter) **cost by ~20%**",
+        ],
+      },
+      {
         subHeading: "Fullstack Engineer - Numerator",
         innerContent: [
-          "Did system design and implementation for scalable infra needed for crawling **3600+ sites** at various intervals",
+          "System design and implementation for scalable infra needed for initiating crawling on **3600+ sites, 70mn crawls/day**",
           "Migrated pip packages from 3rd party tooling (unorganised way) to GitHub",
           "Migrating UI from **EmberJs/vanillaJs/flask-Jinja2** to unified **ReactJs** pages",
-          "Working on **infra related(AWS)** and **on-call** issues",
+          "Working on **infra(AWS)** and **on-call** issues",
         ],
       },
       {
@@ -16,7 +25,7 @@ export default {
         innerContent: [
           "Worked on **3 client projects**",
           "Created **3 POC's** and **2 system design** for prospects",
-          "Provided **cloud solutioning** mainly in AWS and mentored freshers",
+          "Provided **cloud solutioning** mainly in AWS and **mentored freshers**",
         ],
       },
     ],
@@ -25,7 +34,7 @@ export default {
     heading: "Projects",
     content: [
       {
-        subHeading: "Pricing Intel (kodiak/DS) (Current) - Numerator",
+        subHeading: "Pricing Intel (kodiak/DS) (Current) - Numerator/Wiser",
         innerContent: [
           "Working on full end to end development of new features for Pricing Intel platform. Mostly catering to **report generation services, task schedulers & automating workflows.**",
           "Created a scalable system design on AWS to **handle massive number of crawls** to various online stores.",
@@ -35,8 +44,8 @@ export default {
       {
         subHeading: "Take1 TV Transcription - Cybage",
         innerContent: [
-          "Responsible for **designing APIs** for TV transcription service Take1's resource and user management platform that runs completely on AWS . Worked on **UI core logic design in Angular and project setup.**",
-          "Led design and implementation of **fully scalable and cost efficient email service** on aws infra upon various triggers to notify entities of services and system health.",
+          "Responsible for **designing APIs** for resource and user management. Worked on **UI core logic design in Angular and project setup.**",
+          "Implemented scalable AWS email service for triggered alerts for reporting and workflow notifications",
           "**Created a CI/CD application(mobile first)** with **Flask, ReactJs and shell scripts** for deployment of 6 apps and infra needs over 4 different AWS accounts.",
         ],
       },
@@ -50,8 +59,8 @@ export default {
       {
         subHeading: "Ampush(Ad-Tech) - Cybage",
         innerContent: [
-          "Responsible for **partner onboarding and integration in the system**, Rule creation and optimization for BA's and MA's.",
-          "Used **Spark for data manipulations on the Cloudera HDFS cluster, and data pipeline verification** before sandbox deployments.",
+          "Worked on **partner onboarding and integration** workflow design, rule creation and optimization.",
+          "Used **PySpark for data manipulations on the Cloudera HDFS cluster, and data pipeline verification** before sandbox deployments.",
           "Worked on **data segregation for all the advertisement data logs** generated from facebook, twitter, pinterest and instagram and generating a prediction based model to be able to **predict ctr and other metrics for similar Ad campaigns.**",
         ],
       },

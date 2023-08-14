@@ -3,14 +3,15 @@ export default {
   email: "ishansakunia@gmail.com",
   designation: "S/W Engineer",
   motto:
-    "2.4+ years of experience as a fullstack developer and cloud solutioning",
+    "5+ years of experience as a fullstack developer and cloud solutioning",
   phoneNumber: "+91 8830512970",
-  location: "VadgaonSheri, Pune",
+  location: "Pune",
   skills: [
     "Python",
     "Flask",
     "Django",
     "ReactJs",
+    "React Native(Expo)",
     "Angular8",
     "AWS",
     "Docker",
