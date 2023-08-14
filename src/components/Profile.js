@@ -38,19 +38,19 @@ export default () => {
         >
           Get 1 page PDF
         </button>
-        <p>
+        <div className="py-2">
           <h5 className="head-bar">Work</h5>
           <b>{CommonData.motto}</b>
-        </p>
-        <p>
+        </div>
+        <div className="py-2">
           <h5 className="head-bar">Skills</h5>
           {CommonData.skills.map((skill, idx) => (
             <span key={idx} className="badge rounded-pill">
               {skill}
             </span>
           ))}
-        </p>
-        <p>
+        </div>
+        <div className="py-2">
           <h5 className="head-bar">Contact Info</h5>
           <div>
             <b>{CommonData.email}</b>
@@ -61,7 +61,7 @@ export default () => {
           <div>
             <b>{CommonData.location}</b>
           </div>
-        </p>
+        </div>
       </div>
     </div>
   );
