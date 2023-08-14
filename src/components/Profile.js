@@ -25,6 +25,12 @@ export default () => {
           <b>{CommonData.motto}</b>
         </p>
         <p>
+          <h5 className="head-bar">Skills</h5>
+          {CommonData.skills.map((skill) => (
+            <span className="badge rounded-pill"> {skill} </span>
+          ))}
+        </p>
+        <p>
           <h5 className="head-bar">Contact Info</h5>
           <div>
             <b>{CommonData.email}</b>
@@ -35,12 +41,6 @@ export default () => {
           <div>
             <b>{CommonData.location}</b>
           </div>
-        </p>
-        <p>
-          <h5 className="head-bar">Skills</h5>
-          {CommonData.skills.map((skill) => (
-            <span className="badge rounded-pill"> {skill} </span>
-          ))}
         </p>
       </div>
     </div>
