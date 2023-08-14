@@ -11,10 +11,10 @@ export default () => {
   };
   return (
     <div className="col-5 col-md-3 profile">
-      <div class="hex-base">
-        <div class="hex__shape">
-          <div class="hex__shape">
-            <div class="hex__shape">
+      <div className="hex-base">
+        <div className="hex__shape">
+          <div className="hex__shape">
+            <div className="hex__shape">
               <img alt="Aklesh Sakunia" src="aklesh-1.jpg" />
             </div>
           </div>
@@ -44,8 +44,10 @@ export default () => {
         </p>
         <p>
           <h5 className="head-bar">Skills</h5>
-          {CommonData.skills.map((skill) => (
-            <span className="badge rounded-pill"> {skill} </span>
+          {CommonData.skills.map((skill, idx) => (
+            <span key={idx} className="badge rounded-pill">
+              {skill}
+            </span>
           ))}
         </p>
         <p>

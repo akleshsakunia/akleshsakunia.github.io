@@ -36,45 +36,45 @@ export default {
       {
         subHeading: "Pricing Intel (kodiak/DS) (Current) - Numerator/Wiser",
         innerContent: [
-          "Working on full end to end development of new features for Pricing Intel platform. Mostly catering to **report generation services, task schedulers & automating workflows.**",
-          "Created a scalable system design on AWS to **handle massive number of crawls** to various online stores.",
-          "Responsible for **AWS infra related issues** and **system maintainence.**",
+          "Working on full end to end development of new features for Pricing Intel platform. Mostly catering to **report generation services, task schedulers & automating workflows**",
+          "Created a scalable system design on AWS to **handle massive number of crawls** to various online stores",
+          "Responsible for **AWS infra related issues** and **system maintainence**",
         ],
       },
       {
         subHeading: "Take1 TV Transcription - Cybage",
         innerContent: [
-          "Responsible for **designing APIs** for resource and user management. Worked on **UI core logic design in Angular and project setup.**",
+          "Responsible for **designing APIs** for resource and user management. Worked on **UI core logic design in Angular and project setup**",
           "Implemented scalable AWS email service for triggered alerts for reporting and workflow notifications",
-          "**Created a CI/CD application(mobile first)** with **Flask, ReactJs and shell scripts** for deployment of 6 apps and infra needs over 4 different AWS accounts.",
+          "**Created a CI/CD application(mobile first)** with **Flask, ReactJs and shell scripts** for deployment of 6 apps and infra needs over 4 different AWS accounts",
         ],
       },
       {
         subHeading: "Google - Online marketing challenge - Cybage",
         innerContent: [
-          "Worked on new feature requests, **task automation and pipeline design for data ingestion from google sheets and Google's internal DB APIs(cronjobs on GCP AppEngine).**",
-          "Worked on **maps integration for 'Grow with Google'.**",
+          "Worked on new feature requests, **task automation and pipeline design for data ingestion from google sheets and Google's internal DB APIs(cronjobs on GCP AppEngine)**",
+          "Worked on **maps integration for 'Grow with Google'**",
         ],
       },
       {
         subHeading: "Ampush(Ad-Tech) - Cybage",
         innerContent: [
-          "Worked on **partner onboarding and integration** workflow design, rule creation and optimization.",
-          "Used **PySpark for data manipulations on the Cloudera HDFS cluster, and data pipeline verification** before sandbox deployments.",
-          "Worked on **data segregation for all the advertisement data logs** generated from facebook, twitter, pinterest and instagram and generating a prediction based model to be able to **predict ctr and other metrics for similar Ad campaigns.**",
+          "Worked on **partner onboarding and integration** workflow design, rule creation and optimization",
+          "Used **PySpark for data manipulations on the Cloudera HDFS cluster, and data pipeline verification** before sandbox deployments",
+          "Worked on **data segregation for all the advertisement data logs** generated from facebook, twitter, pinterest and instagram and generating a prediction based model to be able to **predict ctr and other metrics for similar Ad campaigns**",
         ],
       },
       {
         subHeading: "Anti-Depression Chat Bot - Freelancer",
         innerContent: [
-          "Created a **word sense disambiguation** rule engine for understanding sentiments and relevant synonym tracking and created a self learning model using weighted averaging. Worked on **NLP and backend integration using NLTK and flask.**",
+          "Created a **word sense disambiguation** rule engine for understanding sentiments and relevant synonym tracking and created a self learning model using weighted averaging. Worked on **NLP and backend integration using NLTK and flask**",
         ],
       },
       {
         subHeading:
           "Agricultural product object detection using OpenCV - Final Yr.",
         innerContent: [
-          "Created an **IOT based object detection software** for picking ready to harvest fruits and for surveillance, used template mapping techniques to improve classification. Used **Django and Mysql** for UI & reporting.",
+          "Created an **IOT based object detection software** for picking ready to harvest fruits and for surveillance, used template mapping techniques to improve classification. Used **Django and Mysql** for UI & reporting",
         ],
       },
     ],
