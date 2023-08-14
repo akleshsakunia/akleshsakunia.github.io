@@ -7,7 +7,7 @@ export default {
   phoneNumber: "+91 8830512970",
   location: "VadgaonSheri, Pune",
   skills: [
-    "Python3",
+    "Python",
     "Flask",
     "Django",
     "ReactJs",
