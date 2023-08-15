@@ -5,10 +5,11 @@ import CommonData from "../shared/CommonData";
 export default () => {
   const getPdf = (single = true) => {
     const projectsCol = document.getElementById("projects");
-    if (single) projectsCol.style.display = "none";
+    projectsCol.style.display = single ? "none" : "";
     window.print();
-    if (single) projectsCol.style.display = "";
+    projectsCol.style.display = "";
   };
+
   return (
     <div className="col-5 col-md-3 profile">
       <div className="hex-base">
