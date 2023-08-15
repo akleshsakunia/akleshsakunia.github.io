@@ -26,18 +26,25 @@ export default () => {
           <h3 className="myname">{CommonData.name}</h3>
           <h6>{CommonData.designation}</h6>
         </div>
-        <button
-          onClick={() => getPdf(false)}
-          className="no-print btn btn-secondary m-2"
-        >
-          Get full PDF
-        </button>
-        <button
-          onClick={() => getPdf()}
-          className="no-print btn btn-secondary m-2"
-        >
-          Get 1 page PDF
-        </button>
+        <div className="row no-print" style={{ alignItems: "center" }}>
+          <div className="col">
+            <button
+              onClick={() => getPdf(false)}
+              className="btn btn-outline-secondary m-2"
+            >
+              Full PDF
+            </button>
+          </div>
+          <div className="col">
+            <button
+              onClick={() => getPdf()}
+              className="btn btn-outline-secondary m-2"
+            >
+              Short PDF
+            </button>
+          </div>
+        </div>
+
         <div className="py-2">
           <h5 className="head-bar">Work</h5>
           <b>{CommonData.motto}</b>
